@@ -1,4 +1,4 @@
-const asciiArt = `
+const welcomeMessage = `
                    zzz                   
                zzzzzzzzzzz               
            zzzzzzzzzzzzzzzzzzz           
@@ -18,8 +18,10 @@ zzzzzzzz     zzzzzzzzzz zzzz z      zzzzzz
       zzzzz        zzz        zzzzz      
        zzzzzzz      z      zzzzzzz       
          zzzzzzz         zzzzzzz         
-           zzzzz         zzzzz      
+           zzzzz         zzzzz
+
+
 
 `;
 
-export default asciiArt;
+export default welcomeMessage;
