@@ -1,3 +1,4 @@
+const asciiArt = `
                    zzz                   
                zzzzzzzzzzz               
            zzzzzzzzzzzzzzzzzzz           
@@ -18,3 +19,7 @@ zzzzzzzz     zzzzzzzzzz zzzz z      zzzzzz
        zzzzzzz      z      zzzzzzz       
          zzzzzzz         zzzzzzz         
            zzzzz         zzzzz      
+
+`;
+
+export default asciiArt;

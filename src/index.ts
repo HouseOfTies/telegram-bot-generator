@@ -1,12 +1,8 @@
 #!/usr/bin/env node
-
 import * as fs from "fs";
 import * as path from "path";
+import asciiArt from "./asciiArt";
 
-const text = fs.readFile(
-  path.join(__dirname, "./asciiArt.txt"),
-  "utf8",
-  (error, data) => {
-    console.log(typeof(data));
-  }
-);
+const current_dir = process.cwd();
+
+console.log(current_dir);
