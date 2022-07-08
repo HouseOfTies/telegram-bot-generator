@@ -2,15 +2,15 @@
   "name": "telegram-bot-generator",
   "version": "1.0.0",
   "description": "CLI tool to generate Telegram bots from scaffolding templates, n-joy. ✨",
-  "main": "src/bot.ts",
+  "main": "src/index.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "tsc",
     "heroku-postbuild": "npm run build",
-    "start": "ts-node -r tsconfig-paths/register --transpile-only ./src/bot.ts",
-    "inspect": "nodemon --inspect src/bot.ts",
+    "start": "ts-node -r tsconfig-paths/register --transpile-only ./src/index.ts",
+    "inspect": "nodemon --inspect src/index.ts",
     "test": "jest",
     "lint": "npm run lint:js ",
     "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
