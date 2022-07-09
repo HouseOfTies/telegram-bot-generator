@@ -1,13 +1,34 @@
 #!/usr/bin/env node
-import welcomeMessage from "./welcomeMessage";
-import * as fs from "fs";
-import inquirer from "inquirer";
-import chalk from "chalk";
-import gradient from "gradient-string";
-import axios from "axios";
+const fs = require("fs");
+const inquirer = require("inquirer");
+const chalk = require("chalk");
+const gradient = require("gradient-string");
+const axios = require("axios");
 
-const currentDir: string = process.cwd();
-const choices = fs.readdirSync(`${currentDir}/cli/`);
+const currentDir = process.cwd();
+const choices = fs.readdirSync(`${__dirname}/cli`);
+const welcomeMessage = `
+                   zzz                   
+               zzzzzzzzzzz               
+           zzzzzzzzzzzzzzzzzzz           
+      zzzzzzzzzzzzzzzzzzzzzzzzzzzz       
+    zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz    
+   zzzzzzzzzz   zzz z zzz   zzzzzzzzzz   
+   zzzzzzzzzz     zzzzz      zzzzzzzzz   
+  zzzzzzzzzz                 zzzzzzzzz   
+  zzzzzzzzzz                 zzzzzzzzzz  
+  zzzzzzzzzzz      zzzz      zzzzzzzzzz  
+ zzzzzzzzzzzzzz    zzz     zzzzzzzzzzzzz 
+ zzzzzzzz zzzz     zzz     zzzz  zzzzzzz 
+zzzzzzzz     zzzzzzzzzz zzzz z      zzzzzz
+ zzzzzz     z  zzzzzzzzzzzz z     zzzzzz 
+   zzzzz       zzzzzzzzzzz  z    zzzzz   
+    zzzzz        zzzzzzz        zzzzz    
+      zzzzz        zzz        zzzzz      
+       zzzzzzz      z      zzzzzzz       
+         zzzzzzz         zzzzzzz         
+           zzzzz         zzzzz
+`;
 
 console.log(
   gradient([
@@ -31,12 +52,12 @@ Botfather link:} {bold.hex("ff1b34") https://www.t.me/botfather}
 
 const generator = async () => {
   let botUsername;
-  const questions: any = [
+  const questions = [
     {
       name: "telegram-bot-token",
       type: "input",
       message: "Type here the <Token> of your bot:",
-      validate: async function (input: string) {
+      validate: async function (input) {
         try {
           const url = `https://api.telegram.org/bot${input}/getme`;
           const request = await axios.get(url);
@@ -69,10 +90,12 @@ const generator = async () => {
     ];
 
     if (confirmation === true) {
-      const templatePath = `${currentDir}/cli/${telegramBotChoice}`;
+      const templatePath = `${__dirname}/cli/${telegramBotChoice}`;
 
       try {
         fs.mkdirSync(`${currentDir}/${botUsername}`);
+        const envData = `BOT_TOKEN=${telegramBotToken}\nPORT=3000\nNODE_ENV='development'`;
+        fs.writeFileSync(`${currentDir}/${botUsername}/.env`, envData);
       } catch (error) {
         console.log(
           botUsername,
@@ -80,10 +103,13 @@ const generator = async () => {
         );
       }
 
-      createDirectoryContents(templatePath, botUsername, telegramBotToken);
+      createDirectoryContents(templatePath, botUsername);
 
       console.log(
         chalk`Congratulations, a bot called {bold.rgb(10,100,200) ${botUsername}} was created at the path: {bold.rgb(10,100,200) ${currentDir}/${botUsername}} look at the folder called like your bot. ✨`
+      );
+      console.log(
+        chalk`\n{bold.green Note:} Remember install all the packages to run your bot correctly, any issue or bug you can contact me at Telegram in {bold.rgb(10,100,200) https://www.t./me/zeroseventty}`
       );
     } else {
       console.log("Bot creation has been interrupted. Zzzzz...");
@@ -91,21 +117,7 @@ const generator = async () => {
   });
 };
 
-function createDirectoryContents(
-  templatePath,
-  newProjectPath,
-  ...telegramBotToken
-) {
-  const envData = `
-# Bot Token
-BOT_TOKEN=${telegramBotToken}
-
-# Port
-PORT=3000
-
-#Development Environment
-NODE_ENV='development'
-`;
+function createDirectoryContents(templatePath, newProjectPath) {
   const filesToCreate = fs.readdirSync(templatePath);
 
   filesToCreate.forEach((file) => {
@@ -121,7 +133,6 @@ NODE_ENV='development'
       const writePath = `${currentDir}/${newProjectPath}/${file}`;
 
       fs.writeFileSync(writePath, contents, "utf-8");
-      fs.writeFileSync(__dirname + ".env", envData);
     } else if (stats.isDirectory()) {
       fs.mkdirSync(`${currentDir}/${newProjectPath}/${file}`);
       createDirectoryContents(

@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-telegram-bot-template-v1",
+  "name": "nodejs-telegram-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,14 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
   "type": "module",
+  "keywords": [
+    "Telegram bot",
+    "bot generator",
+    "Scaffolding",
+    "CLI tool"
+  ],
+  "author": "Seventty",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",

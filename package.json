@@ -2,19 +2,17 @@
   "name": "telegram-bot-generator",
   "version": "1.0.0",
   "description": "CLI tool to generate Telegram bots from scaffolding templates, n-joy. ✨",
-  "main": "src/index.ts",
+  "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
-    "heroku-postbuild": "npm run build",
-    "start": "ts-node -r tsconfig-paths/register --transpile-only ./src/index.ts",
-    "inspect": "nodemon --inspect src/index.ts",
+    "start": "node index.js",
+    "inspect": "nodemon --inspect index.js",
     "test": "jest",
     "lint": "npm run lint:js ",
-    "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
-    "lint:js": "npm run lint:eslint src/",
+    "lint:eslint": "eslint --ignore-path .gitignore --ext .js",
+    "lint:js": "npm run lint:eslint",
     "lint:fix": "npm run lint:js -- --fix"
   },
   "repository": {
@@ -34,15 +32,13 @@
   },
   "homepage": "https://github.com/BotHouseZ/telegram-bot-generator#readme",
   "bin": {
-    "generate-telegram-bot": "./src/index.ts"
+    "telegram-bot-generator": "index.js"
   },
   "dependencies": {
-    "@types/node": "^18.0.3",
     "axios": "^0.27.2",
     "chalk": "^4.1.2",
     "gradient-string": "^2.0.1",
-    "inquirer": "^8.2.4",
-    "tsconfig-paths": "^4.0.0"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "@types/gradient-string": "^1.1.2",

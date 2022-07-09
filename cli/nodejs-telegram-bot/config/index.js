@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 
-
 if(process.env.NODE_ENV !== "production"){
   const envFound = dotenv.config();
   if (envFound.error) {
@@ -9,7 +8,7 @@ if(process.env.NODE_ENV !== "production"){
 }
 
 export default {
-  port: parseInt(process.env.PORT, 10),
   bot: process.env.BOT_TOKEN,
+  port: parseInt(process.env.PORT, 10),
 };
 
