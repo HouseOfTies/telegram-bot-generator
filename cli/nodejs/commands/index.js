@@ -1,2 +1,2 @@
 export { default as start } from "./start/start.js";
-export { default as hello } from "./hello/helloCommand.js";
+export { default as say } from "./say/say.js";
