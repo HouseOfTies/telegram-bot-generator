@@ -9,7 +9,6 @@
   "scripts": {
     "start": "node index.js",
     "inspect": "nodemon --inspect index.js",
-    "test": "jest",
     "lint": "npm run lint:js ",
     "lint:eslint": "eslint --ignore-path .gitignore --ext .js",
     "lint:js": "npm run lint:eslint",
