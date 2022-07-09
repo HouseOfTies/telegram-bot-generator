@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "test": "echo \"No test specified\"",
     "inspect": "nodemon --inspect index.js",
     "lint": "npm run lint:js ",
     "lint:eslint": "eslint --ignore-path .gitignore --ext .js",
