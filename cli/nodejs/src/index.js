@@ -18,7 +18,9 @@ import TelegramBot from "node-telegram-bot-api";
 import config from "./../config/index.js";
 import commands from "./../loaders/commands.js";
 
-console.log("\nNodejs telegram bot template, created and manteined by: Seventty");
+console.log(
+  "\nNodejs telegram bot template, created and manteined by: Seventty"
+);
 console.log("Bot running on port", config.port);
 
 async function startBot() {
