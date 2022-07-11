@@ -10,9 +10,13 @@
 ![GitHub](https://img.shields.io/github/license/houseofties/telegram-bot-generator)  ![GitHub repo size](https://img.shields.io/github/repo-size/houseofties/telegram-bot-generator) ![npm](https://img.shields.io/npm/dt/telegram-bot-generator) ![npm](https://img.shields.io/npm/dw/telegram-bot-generator) ![npm](https://img.shields.io/npm/v/telegram-bot-generator) ![GitHub last commit](https://img.shields.io/github/last-commit/houseofties/telegram-bot-generator)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/houseofties/)
 
-### The best scaffolding and boilerplate NPM CLI tool to create bots
+<div align="center">
+<h3>
+	The best scaffolding and boilerplate NPM CLI tool to create bots
+</h3>
+<img src="https://imgur.com/V9aCT4o.png">
+</div>
 
-![](https://imgur.com/V9aCT4o.png)
 
 ## Why TBG?
 I recently became fascinated by telegram bots, being this. A new but powerful tool in which many programmers have been approached under the same fascination. Many bots have been seen throughout the messaging system itself, some more useful than others. Among them I can mention my beloved **XhibalbaBot**, a project I started several years ago and which I continue to maintain to this day with increasingly clean and scalable structures.
@@ -66,7 +70,7 @@ Do you want to know more about me or keep in touch? Give a look to my portfolio 
 
 Do you want colaborate? Go ahead, open a pull request.
 
-Do you want type me? There is my telegram.
+Do you want message me? There is my telegram.
 
 [![private](https://img.shields.io/badge/Telegram-direct-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/zeroseventty/)
 
