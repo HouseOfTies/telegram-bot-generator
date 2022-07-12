@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><code>Telegra-Bot-Generator</code></h1>
+  <h1><code>Telegram-Bot-Generator</code></h1>
   <p>
     <strong>
 	The most lightweight, fastest and powerful ToolKit & Scaffolding NPM CLI tool to create

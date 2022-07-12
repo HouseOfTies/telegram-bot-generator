@@ -2,7 +2,7 @@
 =========================================================
 * Nodejs telegram bot template, created and manteined by: Seventty
 =========================================================
-* Main page: https://github.com/BotHouseZ/telegram-bot-generator
+* Main page: https://github.com/houseofties/telegram-bot-generator
 * Copyright©2022 Rainiery Valerio Gonzalez (https://seventty.netlify.app)
 * Coded by: https://seventty.netlify.app
  =========================================================
@@ -10,7 +10,7 @@
 */
 
 /*
- *This template is powered by Yagop node-telegram-bot-api's library
+ *This template is powered by Yagop's node-telegram-bot-api library
  *His main repository: https://github.com/yagop/node-telegram-bot-api
  */
 
