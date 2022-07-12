@@ -17,6 +17,9 @@
 <img src="https://imgur.com/V9aCT4o.png">
 </div>
 
+##### Available templates:
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) **(Recommended)**
 
 ## Why TBG?
 I recently became fascinated by telegram bots, being this. A new but powerful tool in which many programmers have been approached under the same fascination. Many bots have been seen throughout the messaging system itself, some more useful than others. Among them I can mention my beloved **XhibalbaBot**, a project I started several years ago and which I continue to maintain to this day with increasingly clean and scalable structures.
@@ -25,7 +28,7 @@ The main reason why I decided to take the challenge of making a CLI tool that wa
 
 BUT GOOD NEWS! This is over, because with something as simple as a token, you can have a fully functional bot.
 
-**Note**: We will be adding new languages as this project is accepted, for now we only have the boilerplate for **NodeJS**, soon **TypeScript**.
+**Note**: We will be adding new languages, structures and improvements as this project is accepted.
 
 ---
 

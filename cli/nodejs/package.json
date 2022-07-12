@@ -2,10 +2,10 @@
   "name": "nodejs-telegram-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js"
   },
   "type": "module",
   "keywords": [
