@@ -2,7 +2,7 @@
   <h1><code>Telegra-Bot-Generator</code></h1>
   <p>
     <strong>
-	The most lightweight, fastest and powerful Scaffolding NPM CLI tool to create
+	The most lightweight, fastest and powerful ToolKit & Scaffolding NPM CLI tool to create
     <a href="https://core.telegram.org/bots">Telegram bot</a></strong>
   </p>
 </div>
@@ -65,6 +65,8 @@ npm i
 npm run
 ```
 ![](https://imgur.com/MhgtCek.gif)
+
+For more information about bot methods, give a look to: https://core.telegram.org/bots/api#available-methods
 
 Do you want to know more about me or keep in touch? Give a look to my portfolio at https://seventty.netlify.app
 
