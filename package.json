@@ -1,6 +1,6 @@
 {
   "name": "telegram-bot-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CLI tool to generate Telegram bots from scaffolding templates, n-joy. ✨",
   "main": "index.js",
   "publishConfig": {
